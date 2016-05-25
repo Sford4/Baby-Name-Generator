@@ -4,8 +4,8 @@
 	<link rel="stylesheet" href="BabyName.css" type="text/css" media="screen">
 	<title>Baby Name Generator!!</title>
 </head>
-<body class="bodyColor">
-	<div class="col-sm-4 col-md-4 lg-md-4">
+<body id="gradient" class="bodyStart">
+	<div class="firstDiv">
 		<h1>Baby Name Generator</h1>
 		<form >
 			What is your last name:<br><input id="your-name" type="text" name="lastname"><br>
@@ -13,15 +13,15 @@
 		<form id="girl-or-boy">
 			<br>
 			<label >Boy Name:
-				<input type="radio" name="name" value="Boy Name" id="boyButton">
+				<input type="radio" name="name" value="Boy Name" id="boyButton" onclick="radioAction('girlGradient')">
 			<br>
 			<label >Girl Name:
-				<input type="radio" name="name" value="Girl Name" id="girlButton">
+				<input type="radio" name="name" value="Girl Name" id="girlButton" onclick="radioAction('boyGradient')">
 		</form>
 		<button id="generate-name" type="button">Generate Name</button>
 		<h2 id="baby-name"></h2>
 	</div>
-	<div class="col-sm-8 col-md-8 col-lg-8">
+	<div class="secondDiv">
 		<img src="http://www.drewsmarketingminute.com/images/old/6a00d8341bf7cb53ef01310fd46549970c-pi.png">
 	</div>	
 

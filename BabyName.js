@@ -47,10 +47,15 @@ function getGirlName(lastName) {
 	console.log(lastName);
 };
 
+
 function getName () {
 	var yourName = document.getElementById('your-name').value; 
 	var isBoy = document.getElementById("boyButton").checked;
 	var isGirl = document.getElementById("girlButton").checked;
+	if (!yourName) {
+		alert("You forgot the poor kid's last name!");
+		return;
+	}
 	if (isBoy === true) {
 		getBoyName(yourName);
 	}
@@ -64,9 +69,14 @@ function getName () {
 
 
 $('#generate-name').click(function() {
-	console.log('got clicked');
 	getName();
 });
+
+function radioAction(color) {
+	if (!$('body').hasClass(color)) {
+		$('body').attr('class', color);
+	}
+}
 
 
 

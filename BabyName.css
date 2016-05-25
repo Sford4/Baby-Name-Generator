@@ -1,8 +1,43 @@
+html {
+	height: 100%;
+}
 
 body {
+	height: 100%;
+  background-color: #95B9C7;
+  background: -webkit-linear-gradient(#95B9C7 , pink) ; 
+  background: -o-linear-gradient(#95B9C7, pink) ; 
+  background: -moz-linear-gradient(#95B9C7, pink) ;
+  background: linear-gradient(#95B9C7 , pink) ; 
+  background-repeat: no-repeat;
+}
+
+
+.girlGradient {
   background: #95B9C7;
   background: -webkit-linear-gradient(left, #95B9C7 , pink); 
   background: -o-linear-gradient(right, #95B9C7, pink); 
   background: -moz-linear-gradient(right, #95B9C7, pink);
   background: linear-gradient(to right, #95B9C7 , pink); 
+}
+
+.boyGradient {
+  background: #95B9C7;
+  background: -webkit-linear-gradient(right, #95B9C7 , pink); 
+  background: -o-linear-gradient(left, #95B9C7, pink); 
+  background: -moz-linear-gradient(left, #95B9C7, pink);
+  background: linear-gradient(to left, #95B9C7 , pink); 
+}
+
+.firstDiv {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.secondDiv {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
 }
