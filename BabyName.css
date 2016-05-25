@@ -1,0 +1,8 @@
+
+body {
+  background: #95B9C7;
+  background: -webkit-linear-gradient(left, #95B9C7 , pink); 
+  background: -o-linear-gradient(right, #95B9C7, pink); 
+  background: -moz-linear-gradient(right, #95B9C7, pink);
+  background: linear-gradient(to right, #95B9C7 , pink); 
+}
